@@ -50,6 +50,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserInfo.xaml.cs">
+      <DependentUpon>UserInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserRegistr.xaml.cs">
       <DependentUpon>UserRegistr.xaml</DependentUpon>
     </Compile>
@@ -65,6 +68,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UserInfo.xaml" />
     <Page Include="UserRegistr.xaml" />
   </ItemGroup>
   <ItemGroup>

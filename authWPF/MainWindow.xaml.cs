@@ -35,7 +35,16 @@ namespace authWPF
                 user.Login = reader.ReadString();
                 user.Password = reader.ReadString();
             }
-            
+
+            if (enteredLogin.Text == user.Login)
+            {
+                if (enteredPassword.Text == user.Password)
+                {
+                    UserInfo info = new UserInfo();
+                    info.Show();
+                    this.Close();
+                }
+            }
         }
     }
 }
